@@ -1,0 +1,79 @@
+/* Updated CSS with modified colors, fonts, and styles */
+
+.navBar {
+    background-color: #1E90FF; /* Updated background color */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px; /* Added padding for better spacing */
+}
+
+/* Styling for anchor tag in navBar */
+.nameOfApp a {
+    font-size: 30px; /* Adjusted font size */
+    text-decoration: none;
+    color: #FFD700; /* Updated text color to gold */
+    letter-spacing: 2px; /* Adjusted letter spacing */
+    font-weight: 600;
+}
+
+.nameOfApp img {
+    height: 50px; /* Adjusted height */
+    width: 50px; /* Adjusted width */
+    margin: -10px 0 0 20px; /* Adjusted margin */
+}
+
+/* Styling for the name of users */
+.nameOfUser {
+    font-size: 18px; /* Adjusted font size */
+    margin: 5px 8px 0 2px;
+    color: #FFFFFF; /* Updated text color to white */
+    font-weight: bold;
+}
+
+.nameOfUser img {
+    height: 25px; /* Adjusted height */
+    width: 25px; /* Adjusted width */
+    margin-right: 8px;
+}
+
+/* Styling for logOut button in navBar */
+.logOut {
+    margin-top: 10px;
+}
+
+.logOut a small {
+    font-size: 18px; /* Adjusted font size */
+    margin-right: 10px;
+    text-decoration: none;
+    color: #FFFFFF; /* Updated text color to white */
+}
+
+.noUser ul {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.noUser li {
+    list-style: none;
+    font-size: 16px; /* Adjusted font size */
+    padding-left: 20px;
+    margin-top: 10px 20px 0 0;
+}
+
+.noUser li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Updated text color to white */
+}
+
+.logOut small {
+    font-size: 15px;
+    color: #FFFFFF; /* Updated text color to white */
+    text-decoration: underline 1px #FFD700; /* Updated underline color to gold */
+    padding: 5px;
+}
+
+.logOut small:hover {
+    color: #BD0909; /* Updated hover color to red */
+}

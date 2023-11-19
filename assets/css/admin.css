@@ -1,0 +1,67 @@
+/* Updated CSS with modified colors, fonts, and styles */
+
+.heading {
+    text-align: center;
+    color: #333333; /* Updated text color */
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 2px;
+    border-bottom: 5px solid #FF6347; /* Updated border color */
+}
+
+.text-center {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    font-weight: bold;
+    border-bottom: 5px solid #FF6347; /* Updated border color */
+    color: #333333; /* Updated text color */
+}
+
+.Container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 30%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid #FF6347; /* Updated border color */
+    background-color: #F5F5F5; /* Updated background color */
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.Container form {
+    width: 70%;
+}
+
+.Container form select {
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 5px;
+    border: 1px solid #FF6347; /* Updated border color */
+    padding: 8px; /* Added padding for better spacing */
+}
+
+/* Submit buttons div */
+.submitButtons {
+    width: 30%;
+    margin: 20px 35px; /* Adjusted margin for better spacing */
+}
+
+/* Submit buttons */
+.submitButtons button {
+    background-color: #FFD700; /* Updated background color */
+    width: 80px;
+    height: 35px; /* Adjusted height for better visibility */
+    border: 1px solid #FF6347; /* Updated border color */
+    border-radius: 10px;
+    color: #333333; /* Updated text color */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submitButtons button:hover {
+    background-color: #FFA500; /* Updated hover color */
+}

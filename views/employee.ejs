@@ -1,0 +1,53 @@
+<!-- Updated HTML with modified colors, fonts, and styles -->
+<link rel="stylesheet" href="/css/admin.css">
+
+<h5 class="text-center mt-3" style="color: #1E90FF; font-size: 24px; font-weight: bold;">All Employees List</h5>
+
+<div class="container mt-4">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col" style="color: #333333;">S.No.</th>
+        <th scope="col" style="color: #333333;">Name</th>
+        <th scope="col" style="color: #333333;">Email/View Review</th>
+        <th scope="col" style="color: #333333;">isAdmin</th>
+        <th scope="col" style="color: #333333;">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let i=0; i<employes.length; i++) { %>
+      <tr>
+        <th scope="row" style="color: #333333;">
+          <%= i+1 %>
+        </th>
+        <td style="color: #333333; font-weight: bold;">
+          <%= employes[i].name %>
+        </td>
+        <td>
+          <a href="/admin/viewEmployeeReviews/<%= employes[i]._id %>" style="color: #1E90FF; text-decoration: none;">
+            <%= employes[i].email %>
+          </a>
+        </td>
+        <td>
+          <% if(employes[i].isAdmin) { %>
+          <small style="color: #008000; font-weight: 800;">YES</small>
+          <% } else { %>
+          <small style="color: #DC143C; font-weight: 800;">NO</small>
+          <% } %>
+        </td>
+        <% if(locals.user.id !== employes[i]._id && employes[i].email !== "admin@gmail.com") { %>
+        <td>
+          <a href="/admin/deleteEmployee/<%= employes[i]._id %>"
+            style="color: #DC143C; font-weight: 800;" class="btn btn-md">Delete <i class="bi bi-trash3"></i></a>
+        </td>
+        <% } else { %>
+        <td>
+          <a href="" class="btn btn-md" style="color: #DC143C; font-weight: 800;"><s>Delete <i
+              class="bi bi-trash3"></i></s></a>
+        </td>
+        <% } %>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>
